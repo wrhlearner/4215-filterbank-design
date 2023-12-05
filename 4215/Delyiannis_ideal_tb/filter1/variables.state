@@ -1,13 +1,13 @@
 savedComponent = (let
-(tmp1 tmp2 tmp3 tmp4 tmp5)
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6)
 (unless tmp1
 tmp1 = make_sevVariableStruct()
 )
 (unless tmp1
 tmp1 = (ncons nil)
 )
-tmp1->name = "R3"
-tmp1->expression = "6.34k"
+tmp1->name = "A"
+tmp1->expression = "1e4"
 tmp1->index = 1
 (unless tmp2
 tmp2 = make_sevVariableStruct()
@@ -15,8 +15,8 @@ tmp2 = make_sevVariableStruct()
 (unless tmp2
 tmp2 = (ncons nil)
 )
-tmp2->name = "R41"
-tmp2->expression = "499"
+tmp2->name = "c"
+tmp2->expression = "100n"
 tmp2->index = 2
 (unless tmp3
 tmp3 = make_sevVariableStruct()
@@ -24,8 +24,8 @@ tmp3 = make_sevVariableStruct()
 (unless tmp3
 tmp3 = (ncons nil)
 )
-tmp3->name = "R42"
-tmp3->expression = "3.48k"
+tmp3->name = "r3"
+tmp3->expression = "63.4k"
 tmp3->index = 3
 (unless tmp4
 tmp4 = make_sevVariableStruct()
@@ -33,8 +33,8 @@ tmp4 = make_sevVariableStruct()
 (unless tmp4
 tmp4 = (ncons nil)
 )
-tmp4->name = "C"
-tmp4->expression = "100n"
+tmp4->name = "r41"
+tmp4->expression = "31.6k"
 tmp4->index = 4
 (unless tmp5
 tmp5 = make_sevVariableStruct()
@@ -42,8 +42,17 @@ tmp5 = make_sevVariableStruct()
 (unless tmp5
 tmp5 = (ncons nil)
 )
-tmp5->name = "vin"
-tmp5->expression = "0"
+tmp5->name = "r42"
+tmp5->expression = "4.53k"
 tmp5->index = 5
-list(tmp1 tmp2 tmp3 tmp4 tmp5)
+(unless tmp6
+tmp6 = make_sevVariableStruct()
+)
+(unless tmp6
+tmp6 = (ncons nil)
+)
+tmp6->name = "vin"
+tmp6->expression = "1"
+tmp6->index = 6
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6)
 )
